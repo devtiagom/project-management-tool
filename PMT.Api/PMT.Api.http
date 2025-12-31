@@ -1,0 +1,6 @@
+@PMT.Api_HostAddress = http://localhost:5087
+
+GET {{PMT.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
