@@ -7,4 +7,6 @@ public class ProjectDeveloper
 
     public long DeveloperId { get; set; }
     public Developer Developer { get; set; } = null!;
+
+    public DateTime JoinedAt { get; set; } = DateTime.UtcNow;
 }
