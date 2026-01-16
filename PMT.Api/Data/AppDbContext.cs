@@ -4,7 +4,7 @@ using PMT.Core.Models;
 
 namespace PMT.Api.Data;
 
-public class AppDbContext : DbContext
+public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
 {
     public DbSet<Project> Projects { get; set; } = null!;
     public DbSet<Developer> Developers { get; set; } = null!;

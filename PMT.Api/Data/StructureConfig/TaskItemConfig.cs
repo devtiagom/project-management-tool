@@ -9,7 +9,7 @@ public class TaskItemConfig : IEntityTypeConfiguration<TaskItem>
 {
     public void Configure(EntityTypeBuilder<TaskItem> builder)
     {
-        builder.ToTable("Project");
+        builder.ToTable("TaskItem");
         
         builder.Property(t => t.Id)
             .IsRequired(true)
