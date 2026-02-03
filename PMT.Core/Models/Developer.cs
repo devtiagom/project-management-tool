@@ -10,5 +10,5 @@ public class Developer
     
     public ICollection<ProjectDeveloper> ProjectDevelopers { get; set; } = null!;
     
-    public ICollection<Task> Tasks { get; set; } = null!;
+    public ICollection<TaskItem> Tasks { get; set; } = null!;
 }

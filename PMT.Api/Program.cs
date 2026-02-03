@@ -1,7 +1,16 @@
-var builder = WebApplication.CreateBuilder(args);
+using Microsoft.EntityFrameworkCore;
+using PMT.Api.Data;
 
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder
+    .Configuration
+    .GetConnectionString("DefaultConnection") ?? string.Empty;
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+{
+    options.UseSqlServer(connectionString);
+});
+
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
