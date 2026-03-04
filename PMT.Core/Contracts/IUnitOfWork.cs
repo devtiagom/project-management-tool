@@ -2,7 +2,7 @@ using PMT.Core.Contracts.Repositories;
 
 namespace PMT.Core.Contracts;
 
-public interface IUnityOfWork : IDisposable
+public interface IUnitOfWork : IDisposable
 {
     IDeveloperRepository DeveloperRepository { get; }
     IProjectRepository ProjectRepository { get; }
