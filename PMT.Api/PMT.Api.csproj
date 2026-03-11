@@ -22,7 +22,6 @@
 
     <ItemGroup>
       <Folder Include="Infrastructure\Data\Seed\" />
-      <Folder Include="Infrastructure\Repositories\Base\" />
       <Folder Include="Infrastructure\Repositories\Implementations\" />
       <Folder Include="Infrastructure\UnitOfWork\" />
     </ItemGroup>
