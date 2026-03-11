@@ -2,7 +2,7 @@ using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using PMT.Core.Models;
 
-namespace PMT.Api.Data;
+namespace PMT.Api.Infrastructure.Data.Context;
 
 public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
 {

@@ -6,10 +6,11 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PMT.Api.Data;
+using PMT.Api.Infrastructure.Data.Context;
 
 #nullable disable
 
-namespace PMT.Api.Data.Migrations
+namespace PMT.Api.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     [Migration("20260116033428_create_initial_structure")]

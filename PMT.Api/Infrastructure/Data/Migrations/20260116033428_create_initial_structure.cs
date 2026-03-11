@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace PMT.Api.Data.Migrations
+namespace PMT.Api.Infrastructure.Data.Migrations
 {
     /// <inheritdoc />
     public partial class create_initial_structure : Migration

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using PMT.Core.Enums;
 using PMT.Core.Models;
 
-namespace PMT.Api.Data.StructureConfig;
+namespace PMT.Api.Infrastructure.Data.Context.StructureConfig;
 
 public class TaskItemConfig : IEntityTypeConfiguration<TaskItem>
 {
