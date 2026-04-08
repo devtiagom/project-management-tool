@@ -4,9 +4,9 @@ namespace PMT.Core.Contracts;
 
 public interface IUnitOfWork : IDisposable
 {
-    IDeveloperRepository DeveloperRepository { get; }
-    IProjectRepository ProjectRepository { get; }
-    ITaskItemRepository TaskItemRepository { get; }
+    IDeveloperRepository Developers { get; }
+    IProjectRepository Projects { get; }
+    ITaskItemRepository Tasks { get; }
     
     Task BeginTransactionAsync();
     Task CommitTransactionAsync();
